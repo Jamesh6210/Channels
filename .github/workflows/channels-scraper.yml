@@ -24,7 +24,6 @@ jobs:
 
       - name: Run Python Script
         run: |
-          curl -o daddylive-channels.py "${{ secrets.DADDYLIVE_CHANNELS_URL }}"
           python daddylive-channels.py
 
       - name: Commit and push changes
