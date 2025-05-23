@@ -25,6 +25,7 @@ jobs:
 
       - name: Download and Run Python Script
         run: |
+          curl -o daddylive-events-epg-grabber.py "${{ secrets.DADDYLIVE_EVENTS_EPG_URL }}"
           python daddylive-events-epg-grabber.py
 
       - name: Commit and push changes
